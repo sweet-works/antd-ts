@@ -14,16 +14,19 @@ const { Sider } = Layout;
 const { SubMenu } = Menu;
 const SiderList = [
     {
-        id: 1, icon: <DesktopOutlined />, menuText: '主菜单1', children: [
-            { id: '1_1', text: 'option 1', link: '/home' }
+        id: 1, icon: <DesktopOutlined />, menuText: '主菜单', link: '/home'
+    },
+    {
+        id: 2, icon: <PieChartOutlined />, menuText: '详 情', link: '/detail'
+    },
+    {
+        id: 3, icon: <FileOutlined />, menuText: 'ERROR', children: [
+            { id: '2_1', text: '404', link: '/404' },
+            { id: '1_2', text: '503', link: '/503' }
         ]
     },
-    {
-        id: 2, icon: <PieChartOutlined />, menuText: '主菜单2', link: '/qq'
-    },
-    {
-        id: 3, icon: <FileOutlined />, menuText: '主菜单3', link: '/qq'
-    }
+
+
 ]
 class Menulist extends Component {
     state = {

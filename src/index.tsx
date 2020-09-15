@@ -6,10 +6,10 @@ import 'antd/dist/antd.css'
 import './style/main.less';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-let history = createBrowserHistory();
+let historys = createBrowserHistory();
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
+    <Router history={historys}>
       <App />
     </Router>
   </React.StrictMode>,
