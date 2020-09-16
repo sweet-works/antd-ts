@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
-  // HashRouter as Router,
   Route,
   Switch,
   Redirect
-  // Link
 } from 'react-router-dom';
 import Routers from '../router';
 import SiderDemo from './common/Layout';
-
+import { mapDispatchToProps, mapStateToProps } from './mapProps';
+import { connect } from 'react-redux';
 class App extends Component<any> {
   render() {
     return (
@@ -53,4 +52,4 @@ class App extends Component<any> {
   }
 };
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App)

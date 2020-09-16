@@ -1,4 +1,10 @@
-import React from 'react';
+/*
+ * @Autor: yaojie
+ * @Date: 2020-09-15 19:11:14
+ * @LastEditors: yaojie
+ * @LastEditTime: 2020-09-16 08:41:35
+ * @Description: '路由配置'
+ */
 import Home from '../components/pages/Home';
 import Detail from '../components/pages/Detail';
 import NotFound from '../components/pages/NotFound';
